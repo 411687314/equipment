@@ -1,0 +1,66 @@
+﻿.f-img {
+    display: inline-block;
+    background-image: url('img/sumimgs.png');
+}
+
+.left {
+    background-position: -0px -0px;
+    width:8px;
+    height:16px;
+}
+
+.right {
+    background-position: -0px -24px;
+    width:8px;
+    height:16px;
+}
+
+.y1 {
+    background-position: -0px -55px;
+    width:8px;
+    height:27px;
+}
+
+
+.r {
+    background-position: -0px -88px;
+    width:8px;
+    height:27px;
+}
+
+.ren {
+    background-position: -45px -123px;
+    width:24px;
+    height:27px;
+}
+
+.tabt {
+    background-position: -0px -214px;
+    width:125px;
+    height:25px;
+}
+
+.tabo {
+    background-position: -0px -261px;
+    width:125px;
+    height:25px;
+}
+
+.yuan {
+    background-position: -0px -123px;
+    width:30px;
+    height:27px;
+}
+
+.delete {
+    background-position: -0px -155px;
+    width:16px;
+    height:15px;
+
+}
+
+.dl {
+    background-position: -0px -181px;
+    width:90px;
+    height:23px;
+}
