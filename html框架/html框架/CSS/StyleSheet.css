@@ -20,6 +20,71 @@ body, textarea, input, button, select, keygen, legend { font: 12px/1.14 arial,\5
 body { background: #fff; }
 a, a:hover { color: #333; }
 
+/* 上图下文图文列表 */
+.m-list4{padding:1px 0 0;zoom:1;}
+.m-list4 ul{margin:-11px 0 0 -10px;}
+.m-list4 li{display:inline;float:left;width:150px;margin:10px 0 0 10px;}
+.m-list4 h3,.m-list4 p {width:100%;height:18px;overflow:hidden;margin:5px 0 0;line-height:18px;}
+.m-list4 h3 a,.m-list4 h3 a:hover{color:#333;}
+.m-list4 .u-img,.m-list4 .u-img2{width:auto;height:120px;}
+
+/* 含标题和Tab的模块头部-默认不定宽 */
+.m-hd{height:35px;line-height:35px;padding:1px 0 0;border-bottom:1px solid #ddd;}
+.m-hd h2,.m-hd ul,.m-hd li{float:left;display:inline;}
+.m-hd h2{margin:0 20px 0 0;font-size:16px;}
+.m-hd ul{margin-left:-2px;}
+.m-hd li{position:relative;margin:-1px 0 0 2px;}
+.m-hd li a,.m-hd li a:hover{text-decoration:none;color:#666;}
+.m-hd li a{float:left;padding:0 15px;border:1px solid #ddd;border-bottom:0;border-radius:5px 5px 0 0;text-align:center;font-size:14px;background:#f8f8f8;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fdfdfd),to(#f8f8f8));background:-webkit-linear-gradient(#fdfdfd,#f8f8f8);background:-moz-linear-gradient(#fdfdfd,#f8f8f8);background:-ms-linear-gradient(#fdfdfd,#f8f8f8);background:linear-gradient(#fdfdfd,#f8f8f8);}
+.m-hd li a:hover{background:#fff;}
+.m-hd li.z-crt a{position:relative;padding-bottom:1px;margin-bottom:-1px;background:#fff;}
+.m-hd .more{float:right;margin-left:10px;}
+/* 有背景 */
+.m-hd-bg{padding:11px 10px 0;border-radius:5px 5px 0 0;background:#f7f7f7;}
+/* tab无缝 */
+.m-hd-sl li{margin-left:-1px;}
+.m-hd-sl li a{border-radius:0;}
+.m-hd-sl li:first-child a{border-top-left-radius:5px;}
+.m-hd-sl li:last-child a{border-top-right-radius:5px;}
+/* tab居右 */
+.m-hd-rt h2{margin-right:0;}
+.m-hd-rt ul{float:right;}
+/* tab较小 */
+.m-hd-sm{height:25px;line-height:25px;}
+.m-hd-sm h2{font-size:14px;}
+.m-hd-sm li a{padding:0 10px;font-size:12px;}
+/* tab定宽 */
+.m-hd-fw li a{width:78px;padding:0;}
+/* tab直角 */
+.m-hd-ra,.m-hd-ra li a,.m-hd-ra li:first-child a,.m-hd-ra li:last-child a{border-radius:0;}
+
+
+/* 普通翻页器-默认居中 */
+.m-page{margin:10px 0 0;text-align:center;line-height:32px;font-size:0;letter-spacing:-0.307em;word-wrap:normal;white-space:nowrap;color:#999;}
+.m-page a,.m-page i{display:inline-block;vertical-align:top;padding:0 12px;margin-left:-1px;border:1px solid #ddd;font-size:12px;letter-spacing:normal;text-shadow:0 1px #fff;background:#fff;-webkit-transition:background-color 0.3s;-moz-transition:background-color 0.3s;-ms-transition:background-color 0.3s;transition:background-color 0.3s;}
+.m-page a,.m-page a:hover{text-decoration:none;color:#39c;}
+.m-page a:first-child{margin-left:0;border-top-left-radius:5px;border-bottom-left-radius:5px;}
+.m-page a:last-child{margin-right:0;border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.m-page a.pageprv:before,.m-page a.pagenxt:after{font-weight:bold;font-family:\5b8b\4f53;vertical-align:top;}
+.m-page a.pageprv:before{margin-right:3px;content:'\3C';}
+.m-page a.pagenxt:after{margin-left:3px;content:'\3E';}
+.m-page a:hover{background:#f5f5f5;}
+.m-page a:active{background:#f0f0f0;}
+.m-page a.z-crt,.m-page a.z-crt:hover,.m-page a.z-crt:active{cursor:default;color:#999;background:#f5f5f5;}
+.m-page a.z-dis,.m-page a.z-dis:hover,.m-page a.z-dis:active{cursor:default;color:#ccc;background:#fff;}
+/* 居左 */
+.m-page-lt{text-align:left;}
+/* 居右 */
+.m-page-rt{text-align:right;}
+/* 较小 */
+.m-page-sm{line-height:22px;}
+.m-page-sm a,.m-page-sm i{padding:0 8px;}
+/* 分离 */
+.m-page-sr a,.m-page-sr i{margin:0 3px;border-radius:5px;}
+.m-page-sr i{border:0;}
+.m-page-sr a:first-child,.m-page-sr a:last-child{border-radius:5px;}
+
+
 /* function */
 .f-cb:after, .f-cbli li:after { display: block; clear: both; visibility: hidden; height: 0; overflow: hidden; content: "."; }
 .f-cb, .f-cbli li { zoom: 1; }
@@ -66,7 +131,7 @@ html { _height: auto; _padding: 75px 0 10px; }
 .g-sd, .g-mn { top: 75px; bottom: 10px; _height: 100%; overflow: auto; }
 .g-hd { top: 0; height: 75px; }
 .g-sd { width: 200px; }
-.g-mn { _position: relative; left: 200px; right: 4px; _top: 0; _left: 0; _margin-left: 200px;  }
+.g-mn { _position: relative; left: 200px; right: 4px; _top: 0; _left: 0; _margin-left: 200px; max-height:inherit; }
 .g-mn-full { left: 10px; _left: 0; _margin-left: 10px;  top: 10px; _top: 0; }
 .g-ft { bottom: 0; height: 10px; }
 
